@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Endava Moldova Hackathon</title>
+	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+	<script language="Javascript" type="text/javascript" src="js/jquery-1.4.4.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+ 
+</head>
+<body>
+	<div id="wrapper">
+		<div id="logo"></div>
+		
+		<div id="main">
+            <h2 class="welcome-title">
+                Welcome to Endava Moldova Hackathon v3.0
+            </h3>
+			<div id="countdown" class="countdown">
+					<div class="dash weeks_dash">
+						<span class="dash_title">weeks</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash days_dash">
+						<span class="dash_title">days</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash hours_dash">
+						<span class="dash_title">hours</span>
+						<div class="digit">2</div>
+						<div class="digit">4</div>
+					</div>
+
+					<div class="dash minutes_dash">
+						<span class="dash_title">minutes</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash seconds_dash">
+						<span class="dash_title">seconds</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+                    <div class="clearfix"></div>
+			</div> <!-- end of countdown -->
+            <h3 class="time-left-header">
+                Hackathon starts in
+            </h3>
+	       <div id="time-left-panel" class="time-left-panel">
+					<div class="dash weeks_dash">
+						<span class="dash_title">weeks</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash days_dash">
+						<span class="dash_title">days</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash hours_dash">
+						<span class="dash_title">hours</span>
+						<div class="digit">2</div>
+						<div class="digit">4</div>
+					</div>
+
+					<div class="dash minutes_dash">
+						<span class="dash_title">minutes</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash seconds_dash">
+						<span class="dash_title">seconds</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+                    <div class="clearfix"></div>
+			</div>
+            <div class="copyright">&copy; Copyright Endava 2015. All rights reserved.</div>
+		</div> <!-- end of main -->
+		<!-- start of the javascript code that handles the countdown -->
+ 		<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				/*time left to start - 12.04.2014 10:00:00*/
+                $('#time-left-panel').countDown({
+					targetDate: {
+						'day': 		28,
+						'month': 	11,
+						'year': 	2015,
+						'hour': 	10,
+						'min': 		0,
+						'sec': 		0
+					},
+                    onComplete: function() {
+                        $(".time-left-header,.time-left-panel").hide();
+                        $("#main").addClass("large-countdown");
+                        /*start hackaton - 24 hours*/
+                        $('#countdown').countDown({
+                            targetDate: {
+                                'day': 		29,
+                                'month': 	11,
+                                'year': 	2015,
+                                'hour': 	10,
+                                'min': 		0,
+                                'sec': 		0
+                            },
+                            onComplete: function() {
+                                
+                            },
+                            onTimeChanged: function(seconds) {
+                                if(seconds<60){
+                                    $("#main").addClass("red");
+                                }
+                            }
+                        });
+                    }
+				});
+				
+			});
+		</script> 
+	
+	</div> 
+	
+</body>
+</html>
