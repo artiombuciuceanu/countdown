@@ -55,7 +55,7 @@ img {
 	width: 280px;
 	height: 282px;
 	background: transparent url(images/box-large.png) 0 0 no-repeat;
-	float: center;
+	float: left;
 	margin-left: 20px;
 	position: relative;
 }
@@ -63,7 +63,7 @@ img {
 .countdown .dash .digit {
 	font-size: 110px;
 	font-weight: bold;
-	float: center;
+	float: left;
 	width: 65px;
 	text-align: center;
 	font-family: Arial;
@@ -126,7 +126,7 @@ img {
 .time-left-panel .dash .digit {
 	font-size: 36px;
 	font-weight: bold;
-	float: center;
+	float: left;
 	width: 25px;
 	text-align: center;
 	font-family: Arial;
