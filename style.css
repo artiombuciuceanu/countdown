@@ -52,8 +52,8 @@ img {
     display: none;
 }
 .countdown .dash {
-	width: 280px;
-	height: 282px;
+	width: 180px;
+	height: 182px;
 	background: transparent url(images/box-large.png) 0 0 no-repeat;
 	float: left;
 	margin-left: 20px;
