@@ -46,8 +46,9 @@ img {
 .countdown {margin:20px 192px 0;}
 
 .countdown .weeks_dash,
-.countdown .days_dash,
-.time-left-panel .weeks_dash{
+.countdown .days_dash{
+	
+/*.time-left-panel .weeks_dash*/
     display: none;
 }
 .countdown .dash {
@@ -95,11 +96,15 @@ img {
 /** time-left */
 
 .time-left-panel {
-	width:770px;
-	margin:2px 0 0 640px;
+	/*width:770px;
+	margin:2px 0 0 640px;*/
+
+	width: 782px;
+  margin: 2px 0 0 563px;
 }
 .time-left-header{
-    margin: 20px 0 0 653px;
+     /*margin: 20px 0 0 653px;*/
+		margin: 20px 0 0 575px;
     white-space: nowrap;
     color: #48535a;
     font-size: 16px;
